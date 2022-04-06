@@ -236,7 +236,10 @@ class Car
   
   def hello
     puts "Hello! I am #{@name}. #{@@count} instance(s)."
-    
+  end
+  
+  def self.info
+    puts "#{@@count}instance(s)."
   end
 end
 
@@ -248,3 +251,23 @@ karr.hello
 
 nakamura = Car.new('nakamura')
 nakamura.hello
+
+Car.info
+
+# class Info
+#   @@count = 0
+#   def initialize(name)
+#     @name = name
+#     @@count += 1
+#   end
+  
+#   def hello
+#     puts "Hello! I am #{@name}.instance#{@@count}."
+#   end
+# end
+
+# kitt = Info.new('kitt')
+# kitt.hello
+
+# karr = Info.new('karr')
+# karr.hello
