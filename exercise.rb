@@ -187,3 +187,25 @@
 #   next if n.odd? #上一行と同じ処理
 #   puts n
 # end
+
+# class Car
+#   def initialize(name)
+#     puts 'initialize'
+#     @name = name
+#   end
+#   def hello
+#     puts "Hello! I am #{@name}."
+#   end
+# end
+
+# car = Car.new('shimada')
+# car .hello
+
+# karr = Car.new('nakamura')
+# karr.hello
+
+# def hello(name)
+#   puts "Hello #{name}"
+# end
+
+# hello('shimada')
