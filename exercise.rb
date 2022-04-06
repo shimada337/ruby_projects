@@ -134,11 +134,56 @@
 #  puts price_included(100)
 #  puts price_exclude(110)
 
-lists = [1,3,5,7,9]
-sum = 0
+# lists = [1,3,5,7,9]
+# sum = 0
 
-lists.each do |list|
-    sum += list
-end
+# lists.each do |list|
+#     sum += list
+# end
 
-puts "合計：",sum
+# puts "合計：",sum
+
+# i = 0
+# while i < 10 do
+#   puts i
+#   i += 1
+# end
+
+# 10.upto(14) { |n| puts n }
+# 18.downto(10) { |n| puts n }
+
+# 1.step(10, 2) { |n| puts n }
+# 10.step(1, -2) {|n| puts n  }
+
+# i = 0
+# loop do
+#   puts i 
+#   i += 1
+# end
+
+# i = 0
+# while true
+#   puts i
+#   i += 1
+# end
+
+# i = 0
+# loop do
+#   puts i
+#   i += 1
+#   break if i == 10
+# end
+
+# numbers = [1, 2, 3, 4, 5]
+# numbers.each do |number|
+  # next if number % 2 == 0
+  # next if number.even? #上一行と同じ処理
+#   puts number
+# end
+
+# numbers = [1, 2, 3, 4, 5,]
+# numbers.each do |n|
+  # next unless n % 2 == 0 
+#   next if n.odd? #上一行と同じ処理
+#   puts n
+# end
