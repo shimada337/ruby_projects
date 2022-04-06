@@ -189,6 +189,11 @@
 # end
 
 # class Car
+  
+# attr_accessor :name #インスタンス変数@nameを読み書きするメソッドが自動で定義される
+# attr_reader :name　#読み取りのメソッドのみ定義したい場合
+# attr_writer :name #書き込みのメソッドのみ定義したい場合
+  
 #   def initialize(name)
 #     puts 'initialize'
 #     @name = name
@@ -196,10 +201,22 @@
 #   def hello
 #     puts "Hello! I am #{@name}."
 #   end
+  
+# def name
+#   @name
+# end
+  
+# def name=(value)
+#   @name = value
+# end
 # end
 
-# car = Car.new('shimada')
-# car .hello
+# car = Car.new('kitt')
+# car.hello
+# puts car.name
+# car.name = 'nakamura'
+# puts car.name
+
 
 # karr = Car.new('nakamura')
 # karr.hello
@@ -209,3 +226,25 @@
 # end
 
 # hello('shimada')
+
+class Car
+  @@count = 0
+  def initialize(name)
+    @name = name
+    @@count += 1
+  end
+  
+  def hello
+    puts "Hello! I am #{@name}. #{@@count} instance(s)."
+    
+  end
+end
+
+kitt = Car.new('kitt')
+kitt.hello
+
+karr = Car.new('karr')
+karr.hello
+
+nakamura = Car.new('nakamura')
+nakamura.hello
