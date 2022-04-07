@@ -228,6 +228,7 @@
 # hello('shimada')
 
 class Car
+  REGION = 'USA'
   @@count = 0
   def initialize(name)
     @name = name
@@ -239,7 +240,7 @@ class Car
   end
   
   def self.info
-    puts "#{@@count}instance(s)."
+    puts "#{@@count}instance(s). Region: #{REGION}"
   end
 end
 
@@ -253,6 +254,8 @@ nakamura = Car.new('nakamura')
 nakamura.hello
 
 Car.info
+
+puts Car::REGION
 
 # class Info
 #   @@count = 0
