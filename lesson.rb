@@ -35,4 +35,4 @@ end
 
 puts '計算を終了します'
 puts 'ブランチ作成'
-puts 'ブランチの練習ff'
+puts 'ブランチの練習ccc'
